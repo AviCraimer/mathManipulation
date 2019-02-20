@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('head.html')
+</head>
+
+<body>
+    <!--***** REACT APP *****-->
+    <div id="reactApp" ></div>
+
+      <!-- Load minified babel polyfill only for IE 10 and 11 -->
+      <script type="text/javascript">
+          if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+              document.write('<script src="js/babel-polyfill.min.js"><\/script>');
+      </script>
+
+      @@include('math-jax.html')
+
+
+      <!--***** MAIN APP BUNDLED SCRIPT FILE *****-->
+      <script src="@@appJsSrc"></script>
+
+
+</body>
+
+</html>

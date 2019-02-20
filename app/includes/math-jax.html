@@ -1,0 +1,28 @@
+
+
+<script>
+//Initial Configuration
+window.MathJax = {
+    skipStartupTypeset: true,
+    jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
+    extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+    TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    asciimath2jax: {
+      delimiters: [['~~','~~']],
+      preview: 'none'
+    }
+};
+</script>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' async></script>
+
+<script>
+setTimeout(() => {
+    console.log('MathJax Object',  MathJax);
+}, 1000);
+
+</script>
